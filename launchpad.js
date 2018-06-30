@@ -121,5 +121,4 @@ const rl = readline.createInterface({
 
 
 // login to Discord with your app's token
-var token = process.argv.slice(2)[0];
-client.login(token);
+client.login(process.env.OPENSHIFT_BOTKEY);
