@@ -2,6 +2,8 @@
 const Discord = require('discord.js');
 const axios = require('axios');
 const readline = require('readline');
+const http = require('http');
+
 // create a new Discord client
 const client = new Discord.Client();
 
@@ -121,3 +123,11 @@ const rl = readline.createInterface({
 
 // login to Discord with your app's token
 client.login(process.env.OPENSHIFT_BOTKEY);
+
+http.createServer(function (request, response) {
+    response.writeHead(404);
+    response.end();
+
+ }).listen(process.env.PORT);
+
+
