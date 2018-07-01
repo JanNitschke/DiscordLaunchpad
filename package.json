@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "a discord bot",
   "scripts": {
-    "start": "node launchpad.js"
+    "start": "node launchpad.js",
+    "install": "npm i https://github.com/discordjs/discord.js.git"
   },
   "main": "launchpad.js",
   "dependencies": {
     "axios": "^0.16.2",
-    "discord.js": "https://github.com/discordjs/discord.js.git",
+    "discord.js": "latest",
     "erlpack": "^0.1.2",
     "ffmpeg-binaries": "^3.2.2-3",
     "libsodium-wrappers": "^0.7.3",
