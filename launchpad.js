@@ -1,7 +1,7 @@
 // require the discord.js module
 const Discord = require('discord.js');
 const axios = require('axios');
-const readline = require('readline')
+const readline = require('readline');
 // create a new Discord client
 const client = new Discord.Client();
 
@@ -39,7 +39,7 @@ async function processMessage(message){
         return;
     }
     if (message.content.startsWith("$")) {
-        console.log('getting http://discord.nitschke.website/getSound.php?name='+message.content.substring(1)+"&server="+message.guild.id);
+        console.log("playing");
         var leaveAfter = false;
         var channel = getChannel(message.guild);
         if(channel == null){
@@ -59,7 +59,6 @@ async function processMessage(message){
                     if(leaveAfter) leaveChannel(message.guild);
                     message.delete(1000);
                 });
-                dispatcher.on('error',console.log);
             }else{
                 message.delete(1000);
                 if(leaveAfter) leaveChannel(message.guild);
