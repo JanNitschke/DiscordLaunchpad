@@ -52,8 +52,6 @@ async function processMessage(message){
             if(channel.isTalking == false && response.data.length > 5){
                 channel.isTalking = true;
                 console.log("playing :"+response.data);
-                console.log("stat :"+message.guild.voiceConnection.status);
-
                 const dispatcher = channel.connection.playArbitraryInput(response.data,{ passes: 3});
                 dispatcher.setVolume(0.1);
                 dispatcher.on('end', () => {
