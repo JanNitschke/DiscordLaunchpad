@@ -9,13 +9,12 @@
   "dependencies": {
     "axios": "^0.16.2",
     "discord.js": "https://github.com/discordjs/discord.js.git",
+    "erlpack": "^0.1.2",
     "ffmpeg-binaries": "^3.2.2-3",
+    "libsodium-wrappers": "^0.7.3",
     "node-opus": "^0.2.7",
-    "uws":"^10.148.1",
-    "erlpack":"^0.1.2",
-    "libsodium-wrappers":"^0.7.3"
+    "uws": "^10.148.1"
   },
-  
   "devDependencies": {},
   "author": "Jan Nitschke",
   "license": "ISC"
