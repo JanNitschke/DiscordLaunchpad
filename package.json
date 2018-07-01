@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "a discord bot",
   "scripts": {
-    "start": "node launchpad.js",
-    "install": "npm i https://github.com/discordjs/discord.js.git"
+    "start": "node launchpad.js"
   },
   "main": "launchpad.js",
   "dependencies": {
