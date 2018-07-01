@@ -1,7 +1,7 @@
 // require the discord.js module
 const Discord = require('discord.js');
 const axios = require('axios');
-
+const readline = require('readline')
 // create a new Discord client
 const client = new Discord.Client();
 
