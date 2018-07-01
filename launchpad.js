@@ -39,7 +39,7 @@ async function processMessage(message){
         return;
     }
     if (message.content.startsWith("$")) {
-        console.log("playing");
+        console.log('getting http://discord.nitschke.website/getSound.php?name='+message.content.substring(1)+"&server="+message.guild.id);
         var leaveAfter = false;
         var channel = getChannel(message.guild);
         if(channel == null){
