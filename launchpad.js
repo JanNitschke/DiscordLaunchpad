@@ -59,6 +59,7 @@ async function processMessage(message){
                     if(leaveAfter) leaveChannel(message.guild);
                     message.delete(1000);
                 });
+                dispatcher.on('error',console.log);
             }else{
                 message.delete(1000);
                 if(leaveAfter) leaveChannel(message.guild);
